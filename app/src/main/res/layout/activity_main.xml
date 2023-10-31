@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe tu nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        />
+    
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnHello"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:hint="Escribe tu nombre"
+        android:maxLines="1"
+        android:maxLength="10"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pulsa aqui"
+        android:padding="10dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
