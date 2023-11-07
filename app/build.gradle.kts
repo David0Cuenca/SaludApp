@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.pdmd.saludapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.pdmd.saludapp"
